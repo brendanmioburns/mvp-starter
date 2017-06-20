@@ -67,7 +67,7 @@ class App extends React.Component {
   render () {
     return (<div>
       <h1>BingePlease!</h1>
-      <h3>Stay on top of the shows you haven't had time to watch</h3>
+      <h3>Stay on top of the shows you haven't had time to watch because you're at Hack Reactor</h3>
       <Search onSearch={this.search}/>
       <List shows={this.state.shows}/>
     </div>)

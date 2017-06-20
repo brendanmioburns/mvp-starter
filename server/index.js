@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 // app.use(express.static(__dirname + '/../angular-client'));
 // app.use(express.static(__dirname + '/../node_modules'));
 
+//POST-request to search for a show and add to database
 app.post('/shows/import', function(req, res) {
   console.log(req.body);
 
@@ -23,30 +24,31 @@ app.post('/shows/import', function(req, res) {
     url: 'http://api.tvmaze.com/singlesearch/shows?q=' + req.body.tvshow,
     method: 'GET'
   }
-
-  request.get(options, function(err, res, body) {
-    var results = JSON.parse(body);
-    console.log('REQUEST.GET JSON.PARSED results', results);
-
+  //make request to API and then parse the body of the results for database insertion
+  request.get(options, function(err, _, body) {
     if (err) {
       throw err;
     }
+    var results = JSON.parse(body);
+    console.log('REQUEST.GET JSON.PARSED results: ', results);
+
+    //specify what contents of the parsed API results will be added to database
     var newShow = {
       title: results.name,
-      summary: results.summary,
+      summary: results.summary.slice(3, -4),
       image: results.image.medium
     };
     console.log('NEW SHOW', newShow);
 
+    //add to database
     Show.create(newShow, function(err) {
       if (err) {
         console.log(err);
         throw err;
       }
+      res.send('APP POST WORKED');
     });
   })
-
-  res.send('APP POST WORKED');
 });
 
 app.get('/shows', function (req, res) {
