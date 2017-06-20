@@ -29,7 +29,7 @@ Once the project moves into development, the press release can be used as a touc
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
-  Let's face it - TV shows these days are f*$#ing fire. Whether it's on Netflix, Hulu, HBO, or AmazonTV, once you've completely binged all ten seasons of that one show everyone was raving about, three more come out the next day that are deemed must-watches. How do you keep up? For you as a busy person, there's just not enough time to watch, and in social settings you may find that you are being frowned upon for not catching those TV show references being thrown around. Enter iBinge - the to-do list for watching TV shows so you can keep up with the rest of society.
+  Let's face it - TV shows these days are f*$#ing fire. Whether it's on Netflix, Hulu, HBO, or AmazonTV, once you've completely binged all ten seasons of that one show everyone was raving about, three more come out the next day that are deemed must-watches. How do you keep up? For you as a busy person, there's just not enough time to watch, and in social settings you may find that you are being frowned upon for not catching those TV show references being thrown around. Enter BingePlease! - the to-do list for watching TV shows so you can keep up with the rest of society.
 
 ## Problem ##
   > Describe the problem your product solves.
@@ -39,12 +39,12 @@ Once the project moves into development, the press release can be used as a touc
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
-  iBinge helps you stay on top of the shows you must see.
+  BingePlease! helps you stay on top of the shows you must see.
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
 
-  "Don't let your crazy worklife make you feel hopeless about catching up on your shows - get back on your feet with iBinge and be interesting to talk to again."
+  "Don't let your crazy worklife make you feel hopeless about catching up on your shows - get back on your feet with BingePlease! and be interesting to talk to again."
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
@@ -54,7 +54,7 @@ Once the project moves into development, the press release can be used as a touc
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
-  "I used to have nothing to add to the conversations at the dinner table with my fiancee and her friends because they were so on top of their shows. I was at least 13 shows behind them until iBinge helped me get back on track. Now my marriage is saved and my relationship with her friends and family is fortified."
+  "I used to have nothing to add to the conversations at the dinner table with my fiancee and her friends because they were so on top of their shows. I was at least 13 shows behind them until BingePlease! helped me get back on track. Now thanks to BingePlease! my marriage is saved and my relationship with her friends and family is fortified."
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.

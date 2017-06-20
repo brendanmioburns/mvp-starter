@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/getshows');
 
 var db = mongoose.connection;
 
@@ -11,21 +11,23 @@ db.once('open', function() {
   console.log('mongoose connected successfully');
 });
 
-var itemSchema = mongoose.Schema({
-  quantity: Number,
-  description: String
+var showSchema = mongoose.Schema({
+  title: String,
+  summary: String,
+  image: String
 });
 
-var Item = mongoose.model('Item', itemSchema);
+var Show = mongoose.model('Show', showSchema);
 
 var selectAll = function(callback) {
-  Item.find({}, function(err, items) {
+  Show.find({}, function(err, shows) {
     if(err) {
       callback(err, null);
     } else {
-      callback(null, items);
+      callback(null, shows);
     }
   });
 };
 
 module.exports.selectAll = selectAll;
+module.exports.Show = Show;
