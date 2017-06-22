@@ -13,12 +13,12 @@ class App extends React.Component {
       shows: []
     }
     console.log(this.shows);
-    this.fetchVideos = this.fetchVideos.bind(this);
+    this.fetchShows = this.fetchShows.bind(this);
     this.search = this.search.bind(this);
   }
 
   componentWillMount() {
-    this.fetchVideos();
+    this.fetchShows();
   }
 
   search(term) {
@@ -32,7 +32,7 @@ class App extends React.Component {
       success: function(data) {
         console.log('keyword this inside of AJAX POST: ', this);
         console.log('got data: ', data);
-        this.fetchVideos();
+        this.fetchShows();
       }.bind(this),
       error: (err) => {
         console.log('Error with AJAX POST: ' + err);
@@ -40,7 +40,7 @@ class App extends React.Component {
     })
   }
 
-  fetchVideos() {
+  fetchShows() {
     var context = this;
     $.get({
       url: '/shows',
